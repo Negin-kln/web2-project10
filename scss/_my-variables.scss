@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Vazirmatn", serif;
+}
+//----------------variables-----------------
+$primary:#f2f2f2;
+$secondary:#694318;
+$warning:#f0932b;
+$gray:#b0a8a8;
+$navbar-light-color: $secondary;
+$navbar-light-hover-color:$warning;
+$navbar-light-active-color:$warning;
+$navbar-padding-x: 20px;
+$dropdown-bg:$primary;
+$dropdown-link-color: $secondary;
+$dropdown-link-hover-color:$warning;
+$dropdown-link-hover-bg:inherit;
+$card-color:$primary;
+$logoImgWidth:160px;
+$logoImgHeight:20px;
+$footerHeight:200px;
+// -----------------header------------------
+nav{
+    img{
+        width: $logoImgWidth;
+        height: $logoImgHeight;
+    }
+    nav-link{
+
+    }
+}
+// -----------------footer------------------
+main{
+    a{
+        text-decoration: none;
+    }
+    .card-product1{
+        border: none;
+        border-radius: 10px;
+        background-color: $primary;
+        .card-body{
+            span{
+                color: $secondary;
+            }
+        }
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }   
+    .main-footer{
+        img{
+            width: 200px;
+        }
+    }
+    }
+// -----------------footer------------------
+footer{
+    min-height: $footerHeight;
+    h6{
+        color: $warning;
+    }
+    ul{
+        list-style-type: none;
+        a,li{
+            text-decoration: none;
+            color: $gray;
+        }
+        span{
+            color: $warning;
+        }
+    }
+    p{
+        color:$primary;
+    }
+    img{
+        width: $logoImgWidth/4;
+        height: $logoImgHeight*2;
+    }
+}
